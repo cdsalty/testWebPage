@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sample Woodworking Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Below is for using google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i" rel="stylesheet">
+                <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i" rel="stylesheet"> -->
+
+    <!-- Below is for using image links and etc from fontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="./stylesPattern.css" />
+   
+</head>
+<body>
+    <!-- Create a navbar, specify the background theme depending on your text theme, aka. dark background for light
+        text and then your text color -->
+    <nav class="navbar gooFont navbar-dark navCustom">
+        <div class="container">
+            <a href="" class="navbar-brand"><i class="fas fa-feather-alt mr-2"></i>myWoodworkingProjects</a> <!-- now add the navbar brand; we put it inside the container so it keeps the background but moves the font over -->
+        </div>
+    </nav>
+
+    <div class="jumbotron gooFont text-center mb-auto" id="jumboStyling">
+        <p class="title mainTitle display-3">Christopher Soltis</p>
+        <!-- the reason these are on seperate lines is because they are block level -->
+        <h3 class="lead pb-3">Built by the curiousity of how things come together...<br>The foundation that supports it ...<br>Doing what I love...    </h3> 
+        
+        <!-- we could make a button but since it's propbably going to link to something, we are just playing with links -->
+        <div class="links"> <!-- is this a good idea or not? I did it to try and remove the padding from the links to the bottom jumbotron-->
+            <a href="https:www.espn.com" id="sportsLink" class="btn btn-danger btn-sm">ESPN</a>
+            <a href="https://stackoverflow.com/" id="code" class="btn btn-dark btn-sm">StackOverFlow</a>
+            <a href="https://www.reddit.com/" id="textColor" class="btn btn-primary btn-sm">Reddit</a>
+        </div>
+    </div>
+    
+
+ <!--                  ---- *****         NOW TO MAKING OUR CARDS...             **** ----                        -->
+    
+    <section id="gallery">
+        <!-- We need a container in order to use the the grid system; Without, it would go all the way across -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-3 pt-3">    
+                    <div class="card">
+                            <img class="card-img-top" src="./testBackground.jpg" alt="test image">  <!-- our image for top of card-->
+                            <div class="card-body">
+                                <h5 class="card-title">The first example text</h5>  <!-- give our card a title using "card-title" -->
+                                <p plass="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti 
+                                    placeat harum accusamus magni quia ex natus est dolorum in provident?</p>
+
+                                    <!-- Now we need to add our buttons from the mock up-->
+                                            <!-- purly visible for now; will add functionality later date; -->
+                                <a href="#" class="btn btn-outline-primary btn-sm">share</a>
+                                <a href="#" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>   
+                                        
+                            </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mb-3 pt-3">    
+                        <div class="card">
+                                <img class="card-img-top" src="./testBackground.jpg" alt="test image">  <!-- our image for top of card-->
+                                <div class="card-body">
+                                    <h5 class="card-title">The first example text</h5>  <!-- give our card a title using "card-title" -->
+                                    <p plass="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti 
+                                        placeat harum accusamus magni quia ex natus est dolorum in provident?</p>
+    
+                                        <!-- Now we need to add our buttons from the mock up-->
+                                                <!-- purly visible for now; will add functionality later date; -->
+                                    <a href="#" class="btn btn-outline-primary btn-sm">share</a>
+                                    <a href="#" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>   
+                                            
+                                </div>
+                        </div>  
+                    </div>
+
+                    <div class="col-lg-4 mb-3 pt-3">    
+                            <div class="card">
+                                    <img class="card-img-top" src="./testBackground.jpg" alt="test image">  <!-- our image for top of card-->
+                                    <div class="card-body">
+                                        <h5 class="card-title">The first example text</h5>  <!-- give our card a title using "card-title" -->
+                                        <p plass="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti 
+                                            placeat harum accusamus magni quia ex natus est dolorum in provident?</p>
+        
+                                            <!-- Now we need to add our buttons from the mock up-->
+                                                    <!-- purly visible for now; will add functionality later date; -->
+                                        <a href="#" class="btn btn-outline-primary btn-sm">share</a>
+                                        <a href="#" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>   
+                                                
+                                    </div>
+                            </div>  
+                        </div>
+            </div>      
+        </div>
+
+    </section>
+
+
+
+
+
+<!-- <div class="card" style="width: 18rem;">
+<img src="./testBackground.jpg" class="card-img-top" alt="">
+<div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+</div> -->
+</div>
+        
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="./scriptsPattern.js"></script>
+
+</body>
+</html>
+<!-- 
+----------------------------------------    ADDTIONAL THINGS TO ADD     ----------------------------------------
+
+clear link to espen: <a class="btn toEspen btn-outline-dark" href="https://www.espn.com" role="button">ESPN</a>
+
+
+
+
+----------------------------------------    ADDTIONAL THINGS TO ADD     ---------------------------------------- -->
